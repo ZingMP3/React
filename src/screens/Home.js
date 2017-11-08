@@ -28,30 +28,24 @@ export default class Home extends Component {
     ),
   });
 
-  constructor(props){
-    super(props);
-    this.state={
-      mang:[
-      	{'key': 1 , 'name': "Đề thi đang diễn ra"},
-      	{'key': 2 , 'name': "Tin giáo dục"},
-      	{'key': 3 , 'name': "Gương mặt tiêu biểu"},
 
-      ],
-    }
-  }
 	render() {
 		const {navigate} = this.props.navigation;
 
 		return (
-			<View >
-				<FlatList
-					data={this.state.mang}
-			        renderItem = {({item}) => 
-				        <View>
-				        	<Text>{item.name}</Text>
-				        </View>
-					}
-				/>
+			<View style = {styles.home}>
+				<TouchableOpacity  onPress = { () => { navigate('ListExam')}}>
+					<View style = {styles.item}>
+						<Text style = {styles.text}>Đề thi đang diễn ra</Text>
+					</View>
+				</TouchableOpacity>
+				<View style = {styles.item}>
+					<Text style = {styles.text}>Tin giáo dục</Text>
+				</View>
+
+				<View style = {styles.item}>
+					<Text style = {styles.text}>Gương mặt tiêu biểu</Text>
+				</View>
 			</View>
 		);
 	}

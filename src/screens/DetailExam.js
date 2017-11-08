@@ -3,13 +3,17 @@ import {
 	View,
 	Text
 } from "react-native";
-
+import styles from "../css/styles";
 
 export default class DetailExam extends Component {
 	render() {
-		return (
-			<View>
-				<Text>DetailExam</Text>
+		const { params } = this.props.navigation.state;
+		const {goBack} = this.props.navigation;
+		return(
+			<View style = {styles.container}>
+				<Text >{params.title}</Text>
+				<Text >{params.class}</Text>
+				<Text >{params.subject}</Text>
 			</View>
 		);
 	}
