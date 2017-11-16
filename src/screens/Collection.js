@@ -17,7 +17,9 @@ export default class Collection extends Component {
   };
 	render() {
 		return (
-			<View></View>
+			<View>
+				<Text>Collection</Text>
+			</View>
 		);
 	}
 }

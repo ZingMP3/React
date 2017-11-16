@@ -14,24 +14,11 @@ const MenuButton = (props)=>(
     <Image style={{marginLeft: 15}} source = {require('../img/icon/menu.png')}/>
   </TouchableOpacity>
 );
-const SettingButton = (props)=>(
-  <TouchableOpacity  onPress={() => props.navigation.navigate('DrawerOpen')} >
-    <Image style={{marginLeft: 15}} source = {require('../img/icon/menu.png')}/>
-  </TouchableOpacity>
-);
 export default class Home extends Component {
 	static navigationOptions = ({ navigation }) => ({
     title: 'Home',
-   	header: {
-      style: {
-        backgroundColor: 'red'
-      },
-      tintColor: 'red'
-    }
-},
     headerBackTitle: null,
     headerLeft: <MenuButton navigation = {navigation} />,
-    headerRight: <MenuButton navigation = {navigation} />,
     drawerLabel: 'Trang chủ',
     drawerIcon: ({ tintColor }) => (
       <Image

@@ -3,6 +3,7 @@ import {
 	View,
 	Text
 } from "react-native";
+
 import Home from "./screens/Home";
 import Exam from "./screens/Exam";
 import Rank from "./screens/Rank";
@@ -11,6 +12,9 @@ import Collection from "./screens/Collection";
 import SemesterExam from "./screens/SemesterExam";
 import ListExam from "./screens/ListExam";
 import DetailExam from "./screens/DetailExam";
+import Menu from "./screens/Menu";
+import Home1 from "./screens/Home1";
+
 import { StackNavigator, DrawerNavigator} from 'react-navigation';
 
 export const MyStackNavigator = StackNavigator({
@@ -23,6 +27,9 @@ export const MyStackNavigator = StackNavigator({
   ListExam: {
     screen: ListExam,
   },
+  Menu: {
+  	screen: Menu,
+  }
 });
 
 export const MyDrawerNavigator = DrawerNavigator({
@@ -44,4 +51,13 @@ export const MyDrawerNavigator = DrawerNavigator({
 	Rank: {
 	  	screen: Rank,
 	},
-});
+},
+
+{
+    contentComponent: props => <Menu {...props} />,
+    contentOptions: {
+  		activeTintColor: '#fff',
+  		activeBackgroundColor: '#3D8AE1',
+	}
+  },
+);

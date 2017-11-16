@@ -8,6 +8,12 @@ import {
 } from 'react-native';
 
 const styles = StyleSheet.create({
+    detail: {
+       flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+    },
     container: {
         flex: 1,
         flexDirection: "column"

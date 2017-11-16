@@ -10,10 +10,8 @@ export default class DetailExam extends Component {
 		const { params } = this.props.navigation.state;
 		const {goBack} = this.props.navigation;
 		return(
-			<View style = {styles.container}>
-				<Text >{params.title}</Text>
-				<Text >{params.class}</Text>
-				<Text >{params.subject}</Text>
+			<View style = {styles.detail}>
+				<Text style = {styles.text}>{params.title}</Text>
 			</View>
 		);
 	}

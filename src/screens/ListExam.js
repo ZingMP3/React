@@ -43,7 +43,7 @@ export default class ListExam extends Component {
 		);
 	}
 		componentDidMount(){
-	    fetch("http://192.168.1.177/DemoReact/demo3.php")
+	    fetch("http://192.168.1.5/DemoReact/demo3.php")
 	      .then((response) => response.json())
 	      .then((responseJson) => {
 	        this.setState({
