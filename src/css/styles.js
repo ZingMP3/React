@@ -48,6 +48,14 @@ const styles = StyleSheet.create({
         fontSize: 18,
         color: "black",
     },
+    header: {
+        backgroundColor: '#3D8AE1',
+    },
+    headerText: {
+        color: '#fff',
+        justifyContent: 'center',
+        alignItems: 'center',
+    }
 });
 
 export default styles;
