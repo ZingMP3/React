@@ -18,7 +18,7 @@ export default class Menu extends Component {
 			<View style = { styles.container }>
 				<View style = { styles.profile }>
 					<Image
-						source = {require('../img/1.jpg')}
+						source = {require('../img/a.jpg')}
 						style = { styles.avatar }
 					/>
 					<Text style = {styles.text}>Le Dinh</Text>

@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
     },
     hone:{
         flex: 1,
+        
     },
     item: {
         padding: 50,
@@ -53,8 +54,15 @@ const styles = StyleSheet.create({
     },
     headerText: {
         color: '#fff',
+        textAlign: 'center',
         justifyContent: 'center',
-        alignItems: 'center',
+    },
+    buttonSetting: {
+        marginRight: 15,
+
+    },
+    buttonMenu: {
+        marginLeft: 15
     }
 });
 

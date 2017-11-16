@@ -8,16 +8,19 @@ import {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
+		backgroundColor: '#3D8AE1',
 	},
 	profile: {
 		flex: 1,
 		backgroundColor: "#3D8AE1",
 		justifyContent: 'center',
-		alignItems: 'center'
+		alignItems: 'center',
+		
 	},
 	menu: {
 		flex: 3,
 		backgroundColor: '#F5FCFF',
+		
 	},
 	avatar: {
 		width: 100,

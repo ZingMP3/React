@@ -14,6 +14,7 @@ import ListExam from "./screens/ListExam";
 import DetailExam from "./screens/DetailExam";
 import Menu from "./screens/Menu";
 import Home1 from "./screens/Home1";
+import Setting from "./screens/Setting";
 
 import { StackNavigator, DrawerNavigator} from 'react-navigation';
 
@@ -29,6 +30,9 @@ export const MyStackNavigator = StackNavigator({
   },
   Menu: {
   	screen: Menu,
+  },
+  Setting: {
+  	screen: Setting,
   }
 });
 
@@ -58,6 +62,9 @@ export const MyDrawerNavigator = DrawerNavigator({
     contentOptions: {
   		activeTintColor: '#fff',
   		activeBackgroundColor: '#3D8AE1',
+  		labelStyle: {
+  			textAlign: 'center'
+  		}
 	}
   },
 );
